@@ -5,6 +5,9 @@ pytest==6.2.4
 pytest-django==4.4.0 # pytest suport to django
 pytest-testmon==1.1.2 # pytest --testmon (test only changed files)
 
+# Django test utils
+django-test-migrations==1.1.0
+
 # Mockers
 Faker==4.1.1
 factory_boy==2.12.0
