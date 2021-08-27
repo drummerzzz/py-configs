@@ -1,2 +1,13 @@
-# py-configs
-Simple settings for more productivity
+# Get starting
+
+* First install all dev dependances
+
+```bash
+    pip install -r dev-requirements.txt
+```
+
+* Next config pre commit hook
+
+```bash
+    pre-commit install
+```
