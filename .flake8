@@ -1,0 +1,14 @@
+[flake8]
+ignore =
+    D203 # One blank line required before class docstring
+    D100 # Missing docstring in public module
+    
+exclude =
+    .git,
+    __pycache__,
+    venv
+    build,
+    dist
+
+max-complexity = 10
+max-line-length = 200
