@@ -1,0 +1,27 @@
+repos:
+
+    # Code formatter
+-   repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.8
+
+    # Lintter
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.7.9
+    hooks:
+    - id: flake8
+      additional_dependencies: [flake8-docstrings]
+      stages: [commit]
+
+    # Testing
+-   repo: local
+    hooks:
+    -   id: test
+        name: pytest
+        entry: pytest
+        language: system
+        always_run: true
+        pass_filenames: false
+        stages: [push]
