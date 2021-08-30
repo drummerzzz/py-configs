@@ -5,6 +5,12 @@ test-only-changes-files:
 	pytest -s -v -vv --durations=0 --cache-clear --testmon
 
 
+git-commit-ignore-hooks:
+	git commit --no-verify
+
+git-push-ignore-hooks:
+	git push --no-verify
+
 pre-commit-install-hooks:
 	pre-commit uninstall
 	pre-commit install --install-hooks
