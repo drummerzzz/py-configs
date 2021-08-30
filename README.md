@@ -9,5 +9,5 @@
 * Next config pre commit hook
 
 ```bash
-    pre-commit install
+    make pre-commit-install-hooks
 ```
