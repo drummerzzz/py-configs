@@ -8,6 +8,9 @@ pytest-testmon==1.1.2 # pytest --testmon (test only changed files)
 # Django test utils
 django-test-migrations==1.1.0
 
+# formater
+autopep8==1.6.0
+
 # Mockers
 Faker==4.1.1
 factory_boy==2.12.0
