@@ -18,6 +18,8 @@ exclude =
     build,
     dist
 
+per-file-ignores =
+    */__init__.py: F401
 
 max-complexity = 18
 select = B,C,E,F,W,T4,B9
