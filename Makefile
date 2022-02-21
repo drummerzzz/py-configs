@@ -1,3 +1,22 @@
+.PHONY: install format lint test sec
+
+install:
+	@poetry install
+
+docs:
+	@mkdocs serve
+
+format:
+	@isort .
+	@blue .
+lint:
+	@blue . --check
+	@isort . --check
+	@prospector --with-tool pep257 --doc-warning
+
+sec:
+	@pip-audit
+
 test:
 	pytest -s -v -vv --durations=0 --cache-clear
 
